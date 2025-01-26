@@ -15,7 +15,10 @@
                            formControlName="name"
                            placeholder="Nombre del usuario">
 
-                    <span class="form-text text-danger">
+                    <span
+                    class="form-text text-danger"
+                    *ngIf="isValidField('name')"
+                    >
                         Debe de ser en formato de nombre y apellido
                     </span>
                 </div>
@@ -29,7 +32,9 @@
                            class="form-control"
                            formControlName="email"
                            placeholder="Email del usuario">
-                    <span class="form-text text-danger">
+                    <span
+                    class="form-text text-danger"
+                    *ngIf="isValidField('email')">
                         mensaje de error del email
                     </span>
                 </div>
@@ -43,7 +48,10 @@
                            class="form-control"
                            formControlName="username"
                            placeholder="Nombre código del usuario">
-                    <span class="form-text text-danger">
+                    <span
+                    class="form-text text-danger"
+                    *ngIf="isValidField('username')"
+                    >
                          El username no puede ser Strider
                     </span>
                 </div>
@@ -58,7 +66,10 @@
                            formControlName="password"
                            placeholder="Password de su cuenta">
 
-                    <span class="form-text text-danger">
+                    <span
+                      class="form-text text-danger"
+                      *ngIf="isValidField('password')"
+                      >
                          La contraseña debe de ser mayor de 6 caracteres.
                     </span>
                 </div>
@@ -73,7 +84,10 @@
                            formControlName="password2"
                            placeholder="Confirmar la contraseña">
 
-                    <span class="form-text text-danger">
+                    <span
+                    class="form-text text-danger"
+                    *ngIf="isValidField('password2')"
+                    >
                          Las contraseñas deben de ser iguales
                     </span>
                 </div>
@@ -82,8 +96,9 @@
 
             <div class="row">
                 <div class="col">
-                    <button class="btn btn-primary float-end"
-                            type="submit">
+                    <button
+                      class="btn btn-primary float-end"
+                      type="submit">
                         Crear
                     </button>
                 </div>
