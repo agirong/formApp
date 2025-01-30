@@ -9,7 +9,7 @@ import { EmailValidator } from '../../../shared/service/email.validator.service'
   styles: ``
 })
 export class RegisterPageComponent {
-
+  //Aaron.
   constructor(
     private fb: FormBuilder,
     private validatorService: ValidatorService,
